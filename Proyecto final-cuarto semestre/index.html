@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPro - Taller Mecánico Especializado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <h1>AutoPro</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#reservar">Reservar Cita</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero/Banner -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Mantenimiento profesional para tu vehículo</h2>
+                <p>Confianza, rapidez y calidad en cada servicio. Tu auto en las mejores manos.</p>
+                <div class="hero-values">
+                    <div class="value-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Confianza</span>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Rapidez</span>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-star"></i>
+                        <span>Calidad</span>
+                    </div>
+                </div>
+                <a href="#reservar" class="btn">Reservar cita ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <p class="section-description">Ofrecemos servicios especializados con los más altos estándares de calidad</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Cambio de Aceite</h3>
+                    <p>Mantenimiento esencial para alargar la vida de tu motor con los mejores lubricantes.</p>
+                    <span class="service-price">Desde $25.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Revisión de Frenos</h3>
+                    <p>Seguridad ante todo. Revisamos y reparamos tu sistema de frenos completo.</p>
+                    <span class="service-price">Desde $35.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Alineación y Balanceo</h3>
+                    <p>Mejora el manejo y prolonga la vida de tus llantas con nuestro servicio especializado.</p>
+                    <span class="service-price">Desde $40.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Diagnóstico Eléctrico</h3>
+                    <p>Tecnología de punta para diagnosticar y resolver problemas eléctricos en tu vehículo.</p>
+                    <span class="service-price">Desde $30.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3>Sistema de Enfriamiento</h3>
+                    <p>Mantenimiento y reparación de radiadores, bombas de agua y termostatos.</p>
+                    <span class="service-price">Desde $45.000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Inspección General</h3>
+                    <p>Revisión completa para detectar y prevenir problemas antes de que ocurran.</p>
+                    <span class="service-price">Desde $20.000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Reserva de Citas -->
+    <section id="reservar" class="booking">
+        <div class="container">
+            <h2>Reserva tu Cita</h2>
+            <p class="section-description">Completa el formulario y te confirmaremos tu cita en menos de 24 horas</p>
+            
+            <form class="booking-form" action="https://formspree.io/f/mwpneeae" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehiculo">Tipo de vehículo *</label>
+                        <input type="text" id="vehiculo" name="vehiculo" placeholder="Ej: Toyota Corolla 2020" required>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="servicio">Selecciona un servicio *</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="cambio-aceite">Cambio de Aceite</option>
+                            <option value="frenos">Revisión de Frenos</option>
+                            <option value="alineacion">Alineación y Balanceo</option>
+                            <option value="electrico">Diagnóstico Eléctrico</option>
+                            <option value="enfriamiento">Sistema de Enfriamiento</option>
+                            <option value="inspeccion">Inspección General</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha deseada *</label>
+                        <input type="date" id="fecha" name="fecha" min="" required>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="hora">Hora preferida *</label>
+                    <select id="hora" name="hora" required>
+                        <option value="">Selecciona una hora</option>
+                        <option value="08:00">8:00 AM</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="mensaje">Detalles adicionales sobre tu cita...</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Detalles adicionales sobre tu cita..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn">
+                    <i class="fas fa-calendar-check"></i>
+                    Confirmar cita
+                </button>
+                
+                <div class="form-notification" id="form-notification"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p class="section-description">Estamos aquí para ayudarte. Contáctanos por cualquier medio</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Plaza 51 Building, Cl. 51 #22a - 25, Manizales, Caldas</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>(305)3857420</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>juandavidbetancurj@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario de atención</h4>
+                            <p>Lunes a Viernes: 8:00 am - 6:00 pm</p>
+                            <p>Sábados: 9:00 am - 2:00 pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Síguenos en redes</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form action="https://formspree.io/f/mwpneeae" method="POST">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje de contacto desde AutoPro">
+                        <div class="form-group">
+                            <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="telefono" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="map">
+                    <h3>Ubicación</h3>
+                    <div class="map-container">
+                        <!-- Mapa de Google Maps (reemplazar con iframe real) -->
+                            <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d-75.56190518573424!3d6.201646595501325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDUuOSJOIDc1wrAzMyc0Mi44Ilc!5e0!3m2!1ses!2sco!4v1620000000000!5m2!1ses!2sco" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-car"></i>
+                        <h2>AutoPro</h2>
+                    </div>
+                    <p>Expertos en mantenimiento y reparación automotriz con más de 15 años de experiencia.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#reservar">Reservar Cita</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#servicios">Cambio de Aceite</a></li>
+                        <li><a href="#servicios">Revisión de Frenos</a></li>
+                        <li><a href="#servicios">Alineación</a></li>
+                        <li><a href="#servicios">Diagnóstico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AutoPro Taller Mecánico. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
